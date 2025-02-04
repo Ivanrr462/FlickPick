@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FlickPick</title>
+    <link rel="icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <center>
+    <h4>Registrarse</h4>
+	<div class="clear"></div>
+    <form action="registrarse.php" method="post">
+        <label for="usu">Usuario:</label><br>
+        <div class="clear"></div>
+        <input type="text" name="usuario" value="" style="margin: 5px 0px 5px 0px;width:300px;"><br>
+        <label for="clave">Contraseña:</label><br>
+        <div class="clear"></div>
+        <div style="position:relative; margin: 5px 0px 5px 0px;">
+            <input type="password" id="password" name="clave" value="" style="width:300px;">
+            <img src="imagenes/ojo.png" style="position:absolute; right:10px; top:5px; width:20px; height:20px; cursor:pointer;" onclick="mostrarContrasena('password')">
+        </div>
+        <label for="correo">Correo:</label><br>
+        <div class="clear"></div>
+        <input type="email" name="email" value="" style="margin: 5px 0px 5px 0px;width:300px;"><br>
+        <input type="submit" value="Registrarse"> 
+        <input type="button" value="Iniciar sesión" onclick="location.href='login.html';">
+    </form>
+    </center>
+    <script>
+        function mostrarContrasena(id) {
+            var x = document.getElementById(id);
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
