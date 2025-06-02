@@ -62,19 +62,51 @@ FlickPick es una plataforma web donde los usuarios pueden:
 
 ## 📦 Instalación y Puesta en Marcha
 
-1. **Clona el repositorio** y sube los archivos a tu servidor web (con soporte PHP y MySQL).
-2. **Configura la base de datos**:  
-   - Crea la base de datos `FlickPick` y las tablas necesarias (ver documentación).
-   - Ajusta los datos de conexión en los archivos PHP si es necesario.
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/Ivanrr462/FlickPick.git
+   cd FlickPick
+   ```
+   Si usas XAMPP, copia la carpeta a `C:\xampp\htdocs\FlickPick`.
+
+2. **Configura la base de datos**:
+   - Abre phpMyAdmin o tu gestor MySQL favorito.
+   - Importa el archivo `database.sql` incluido en el repositorio:
+     1. Selecciona "Importar" y sube `database.sql`.
+     2. Esto creará la base de datos y todas las tablas necesarias automáticamente.
+   - Ajusta los datos de conexión en los archivos PHP si es necesario:
+     ```php
+     // ...en config.php o similar...
+     $host = 'localhost';
+     $user = 'root';
+     $pass = '';
+     $db   = 'FlickPick';
+     ```
+
 3. **Sube los archivos multimedia** a las carpetas correspondientes (`uploads/`, `fotos_perfil/`, etc.).
-4. **Accede a la web** desde tu navegador y ¡empieza a disfrutar de FlickPick!
+   - Si no existen, créalas:
+     ```bash
+     mkdir uploads fotos_perfil
+     ```
+   - Da permisos de escritura si es necesario:
+     ```bash
+     # En Windows, asegúrate de que el usuario de Apache tenga permisos
+     # En Linux:
+     chmod 777 uploads fotos_perfil
+     ```
+
+4. **Accede a la web** desde tu navegador:
+   ```
+   http://localhost/FlickPick/
+   ```
+   ¡Empieza a disfrutar de FlickPick!
 
 ---
 
 ## 📚 Documentación
 
-- **Manual de usuario**: [Manual FlickPick.pdf](Manual FlickPick.pdf)
-- **Documentación técnica**: [Documentacion Flickpick.pdf](Documentacion Flickpick.pdf)
+- **Manual de usuario**: Manual FlickPick.pdf
+- **Documentación técnica**: Documentacion Flickpick.pdf
 
 ---
 
@@ -94,7 +126,7 @@ Desarrollado por [Iván Ríos](https://github.com/Ivanrr462) como TFG para ASIR.
 
 ## 📬 Contacto
 
-¿Dudas o sugerencias? Consulta el manual o contacta con el autor.
+¿Dudas o sugerencias? Consulta el manual o contacta conmigo.
 
 ---
 
