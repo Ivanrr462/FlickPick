@@ -105,8 +105,8 @@ FlickPick es una plataforma web donde los usuarios pueden:
 
 ## 📚 Documentación
 
-- **Manual de usuario**: Manual FlickPick.pdf
-- **Documentación técnica**: Documentacion Flickpick.pdf
+- **Manual de usuario**: Un manual sobre como instalar la página web y como usarla
+- **Documentación técnica**: La documentacion detalla todo lo que trae la web, tanto la base de datos como el resto
 
 ---
 
